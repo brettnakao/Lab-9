@@ -24,10 +24,7 @@ z_coord = np.cumsum(z_step)
 
 # Plot 3D random walk
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 
-fig = plt.figure()
-
-ax1 = fig.add_subplot(111, projection='3d')
+ax1 = plt.subplot(projection='3d')
 ax1.plot(x_coord, y_coord, z_coord)
 plt.show()
